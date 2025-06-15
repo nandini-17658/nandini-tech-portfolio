@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="home" className="container mx-auto flex min-h-screen flex-col items-center justify-center text-center">
       <Avatar className="mb-8 h-48 w-48 ring-4 ring-primary/10">
-        <AvatarImage src="/lovable-uploads/6797b5e4-25e1-450f-a94f-402cd0819c96.jpeg" alt="Gollapudi Venkata Nandini" />
+        <AvatarImage src="https://i.postimg.cc/Xq53GB8h/img-link.jpg" alt="Gollapudi Venkata Nandini" />
         <AvatarFallback>GVN</AvatarFallback>
       </Avatar>
       <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
