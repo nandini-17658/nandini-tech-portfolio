@@ -4,23 +4,24 @@ import { PlayCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative w-full min-h-screen flex items-center bg-primary text-primary-foreground overflow-hidden">
+    <section id="home" className="relative w-full h-screen flex items-center bg-primary text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 bg-dots-pattern opacity-10"></div>
+
       <div className="container mx-auto px-4 md:px-6 z-10">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="flex flex-col justify-center space-y-4 text-center lg:text-left animate-fade-in-up">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              <span className="block text-xl font-medium text-amber-400">Hi, I’m</span>
-              Gollapudi Venkata Nandini
+              <span className="block text-2xl font-medium text-amber-400">Hello, I’m Nandini</span>
+              Full Stack Developer
             </h1>
             <p className="mt-4 text-lg text-primary-foreground/80 sm:text-xl max-w-2xl mx-auto lg:mx-0">
-              Full Stack Developer & Tech Enthusiast
+              I design and build applications from front-end to back-end, delivering comprehensive tech solutions and great user experiences.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <Button asChild size="lg" className="bg-amber-400 hover:bg-amber-500 text-amber-950 font-semibold px-8">
-                <a href="#projects">Get Started</a>
+              <Button asChild size="lg" className="bg-amber-400 hover:bg-amber-500 text-amber-950 font-semibold text-base">
+                <a href="#about">Get Started</a>
               </Button>
-              <Button asChild variant="ghost" size="lg" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground group">
+              <Button asChild variant="ghost" size="lg" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground group text-base">
                 <a href="#contact">
                   <PlayCircle className="mr-2 h-5 w-5" />
                   Watch Intro
@@ -42,9 +43,15 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      {/* Decorative dots from template */}
+      <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 left-8 xl:left-16 space-y-2">
+        {[...Array(5)].map((_, i) => (
+          <div key={i} className="w-2 h-2 rounded-full bg-primary-foreground/20" />
+        ))}
+      </div>
     </section>
   );
 };
 
 export default Hero;
-
