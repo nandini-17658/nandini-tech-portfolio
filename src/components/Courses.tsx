@@ -10,6 +10,12 @@ const coursesData = [
     description: 'Completed a Java programming course at Devtown, where I learned core concepts and improved my problem-solving through practical coding challenges.'
   },
   {
+    name: 'Full Stack Web Development',
+    date: 'Aug 2024',
+    organization: 'Devtown',
+    description: 'Successfully finished Devtown’s Full Stack Web Development course, gaining practical experience in building full web applications.'
+  },
+  {
     name: 'Data Structures And Algorithms',
     date: 'Oct 2024',
     organization: 'Devtown',
