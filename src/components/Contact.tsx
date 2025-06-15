@@ -38,6 +38,14 @@ const Contact = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    const lastSubmission = localStorage.getItem('lastSubmission');
+    const now = new Date().getTime();
+
+    if (lastSubmission && now - parseInt(lastSubmission, 10) < 60000) { // 60 seconds
+      toast.error('You are sending messages too frequently. Please wait a minute.');
+      return;
+    }
+
     setIsSubmitting(true);
     try {
       await sendEmail({
@@ -46,6 +54,7 @@ const Contact = () => {
         message: values.message,
       });
       toast.success('Message sent successfully!');
+      localStorage.setItem('lastSubmission', now.toString());
       form.reset();
     } catch (error) {
       console.error('Failed to send email:', error);
