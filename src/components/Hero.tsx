@@ -1,13 +1,14 @@
 
 import { Button } from '@/components/ui/button';
-import { User } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   return (
     <section id="home" className="container mx-auto flex min-h-screen flex-col items-center justify-center text-center">
-      <div className="mb-8 h-32 w-32 rounded-full bg-secondary flex items-center justify-center ring-4 ring-primary/10">
-        <User className="h-16 w-16 text-primary" />
-      </div>
+      <Avatar className="mb-8 h-32 w-32 ring-4 ring-primary/10">
+        <AvatarImage src="https://i.postimg.cc/Xq53GB8h/img-link.jpg" alt="Gollapudi Venkata Nandini" />
+        <AvatarFallback>GVN</AvatarFallback>
+      </Avatar>
       <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
         Hi, I’m Gollapudi Venkata Nandini
       </h1>
