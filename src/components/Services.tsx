@@ -22,7 +22,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="bg-secondary">
+    <section id="services" className="bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Expertise Service! Let's check it out</h2>

@@ -3,7 +3,7 @@ import { Code, Cpu, Share2 } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="bg-background">
+    <section id="about" className="bg-secondary">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>

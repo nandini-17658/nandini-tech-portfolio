@@ -3,7 +3,7 @@ import { Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-8">
+    <footer className="bg-background py-8">
       <div className="container mx-auto text-center text-muted-foreground">
         <div className="flex justify-center gap-4 mb-4">
           <a href="https://github.com/nandini-17658" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Github /></a>

@@ -79,3 +79,10 @@
     @apply py-20 sm:py-32;
   }
 }
+
+@layer utilities {
+  .bg-dots-pattern {
+    background-image: radial-gradient(hsl(var(--primary-foreground) / 0.1) 1px, transparent 1px);
+    background-size: 1rem 1rem;
+  }
+}

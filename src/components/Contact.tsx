@@ -65,8 +65,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-primary text-primary-foreground">
-      <div className="container mx-auto text-center">
+    <section id="contact" className="bg-primary text-primary-foreground relative overflow-hidden">
+      <div className="absolute inset-0 bg-dots-pattern" aria-hidden="true" />
+      <div className="container mx-auto text-center relative">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Got a Project? Let's Talk</h2>
         <p className="mt-4 text-lg max-w-2xl mx-auto text-primary-foreground/80">
           I'm available for freelance work. Feel free to reach out with your project ideas.
