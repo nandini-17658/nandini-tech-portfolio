@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -35,33 +36,40 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-secondary">
+    <section id="projects" className="bg-background">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+        <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Featured Projects</h2>
+            <p className="mt-3 text-lg text-indigo-200 max-w-2xl mx-auto">
+              Here are some of the projects I've worked on.
+            </p>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Card key={project.title} className="flex flex-col">
-              <CardHeader>
-                <div className="aspect-video rounded-lg overflow-hidden mb-4">
-                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
+            <Card key={project.title} className="flex flex-col bg-secondary/50 border-secondary hover:border-amber-400 transition-all duration-300 group rounded-xl overflow-hidden">
+              <CardHeader className="p-0">
+                <div className="aspect-video overflow-hidden">
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300" />
                 </div>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <div className="p-6">
+                  <CardTitle>{project.title}</CardTitle>
+                  <CardDescription className="mt-2 h-10">{project.description}</CardDescription>
+                </div>
               </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-sm font-semibold mb-2">Role: {project.role}</p>
+              <CardContent className="flex-grow p-6 pt-0">
+                <p className="text-sm font-semibold mb-4 text-muted-foreground">Role: {project.role}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.stack.map((tech) => <Badge key={tech} variant="secondary">{tech}</Badge>)}
                 </div>
               </CardContent>
-              <CardFooter>
-                <div className="flex gap-4">
-                  <Button asChild variant="outline" size="sm" disabled={project.link === "#"}>
+              <CardFooter className="p-6 mt-auto">
+                <div className="flex gap-4 w-full">
+                  <Button asChild variant="outline" size="sm" disabled={project.link === "#"} className="w-full">
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <Link /> Live Demo
                     </a>
                   </Button>
-                  <Button asChild size="sm" disabled={project.github === "#"}>
+                  <Button asChild size="sm" disabled={project.github === "#"} className="w-full bg-amber-400 hover:bg-amber-500 text-amber-950 font-semibold">
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github /> GitHub
                     </a>
