@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Award } from 'lucide-react';
 
@@ -28,7 +27,7 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="bg-secondary">
+    <section id="certifications">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

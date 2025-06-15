@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, Database, PenTool } from 'lucide-react';
 
@@ -22,7 +21,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="bg-secondary">
+    <section id="services">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Services</h2>
         <div className="grid md:grid-cols-3 gap-8">

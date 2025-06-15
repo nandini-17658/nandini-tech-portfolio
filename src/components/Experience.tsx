@@ -16,7 +16,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-secondary">
+    <section id="experience">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Experience</h2>
         <div className="max-w-2xl mx-auto flex flex-col gap-8">
