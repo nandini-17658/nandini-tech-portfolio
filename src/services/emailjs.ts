@@ -1,8 +1,8 @@
 
 import emailjs from '@emailjs/browser';
 
-const PUBLIC_KEY = 'xJkK_S2PqXp4-8g_c';
-const SERVICE_ID = 'service_3a30krc';
+const PUBLIC_KEY = 'wPNPrIMPiU6tRPKpN';
+const SERVICE_ID = 'service_rty3svx';
 const TEMPLATE_ID = 'template_iiafg6h';
 
 // Initialize EmailJS with the public key
