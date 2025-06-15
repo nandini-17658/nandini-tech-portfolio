@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -10,7 +9,7 @@ const projects = [
     description: "To educate citizens, especially youth, about the Indian Constitution, democratic.",
     stack: ["HTML", "CSS", "JavaScript", "React.js", "Canva", "Figma"],
     role: "Full-stack developer",
-    image: "/lovable-uploads/16103533-e46e-4c96-a4fc-5864fbb9a7b0.png",
+    image: "/lovable-uploads/8a6e4565-837f-4fc3-8400-d2b85f396b1f.png",
     link: "#",
     github: "https://github.com/nandini-17658",
   },
