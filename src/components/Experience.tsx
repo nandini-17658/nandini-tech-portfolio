@@ -5,7 +5,7 @@ import { Building } from 'lucide-react';
 const experienceData = [
   {
     title: 'Web Developer Intern',
-    company: 'Creative Agency',
+    company: 'Devtown',
     duration: 'Jul 2024 to Oct 2024',
     tasks: [
       'Created a full-stack responsive website using HTML, CSS, JavaScript, and PHP.',
