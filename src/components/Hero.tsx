@@ -5,7 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   return (
-    <section id="home" className="w-full h-screen flex items-center bg-background">
+    <section id="home" className="w-full h-screen flex items-center bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
