@@ -13,6 +13,16 @@ const experienceData = [
       'Gained practical experience in real-world web development workflows.',
     ],
   },
+  {
+    title: 'Software Engineer Intern',
+    company: 'Tech Innovators',
+    duration: 'May 2024 - Jul 2024',
+    tasks: [
+      'Worked on the front-end of a web application using React and TypeScript.',
+      'Collaborated with senior developers to implement new features.',
+      'Participated in code reviews and agile team meetings.',
+    ],
+  },
 ];
 
 const Experience = () => {
