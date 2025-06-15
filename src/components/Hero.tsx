@@ -5,7 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 const Hero = () => {
   return (
     <section id="home" className="container mx-auto flex min-h-screen flex-col items-center justify-center text-center">
-      <Avatar className="mb-8 h-32 w-32 ring-4 ring-primary/10">
+      <Avatar className="mb-8 h-48 w-48 ring-4 ring-primary/10">
         <AvatarImage src="https://i.postimg.cc/Xq53GB8h/img-link.jpg" alt="Gollapudi Venkata Nandini" />
         <AvatarFallback>GVN</AvatarFallback>
       </Avatar>
