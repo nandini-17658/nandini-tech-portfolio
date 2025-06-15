@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Award } from 'lucide-react';
 
@@ -32,7 +33,7 @@ const Certifications = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {certifications.map((cert) => (
-            <Card key={cert.name} className="text-center flex flex-col">
+            <Card key={cert.name} className="text-center flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
               <CardHeader>
                 <div className="mx-auto bg-background rounded-full p-3 w-fit ring-2 ring-primary/10">
                   <Award className="w-8 h-8 text-primary" />

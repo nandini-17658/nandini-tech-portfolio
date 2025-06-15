@@ -31,12 +31,12 @@ const coursesData = [
 
 const Courses = () => {
   return (
-    <section id="courses" className="py-12 lg:py-24 bg-background">
+    <section id="courses" className="py-12 lg:py-24 bg-secondary">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Courses</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {coursesData.map((course) => (
-            <Card key={course.name} className="text-center flex flex-col">
+            <Card key={course.name} className="text-center flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
               <CardHeader>
                 <div className="mx-auto bg-background rounded-full p-3 w-fit ring-2 ring-primary/10">
                   <GraduationCap className="w-8 h-8 text-primary" />

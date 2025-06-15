@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building } from 'lucide-react';
 
@@ -21,7 +22,7 @@ const Experience = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Experience</h2>
         <div className="max-w-2xl mx-auto flex flex-col gap-8">
           {experienceData.map((exp, index) => (
-            <Card key={index}>
+            <Card key={index} className="transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
               <CardHeader>
                 <div className="flex items-start gap-4">
                   <div className="bg-background rounded-full p-2 ring-1 ring-primary/10">
