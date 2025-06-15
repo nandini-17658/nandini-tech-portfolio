@@ -1,7 +1,4 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { GraduationCap } from 'lucide-react';
-
 const educationData = [
   {
     institution: "Mohan Babu University",
@@ -25,32 +22,22 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section id="education" className="bg-background">
+    <section id="education">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">Education</p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">My Academic Journey</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {educationData.map((item) => (
-            <Card
-              key={item.institution}
-              className="text-center flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-primary text-primary-foreground"
-            >
-              <CardHeader>
-                <div className="mx-auto rounded-lg p-4 w-fit bg-white/10">
-                  <GraduationCap className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle>{item.institution}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-col flex-grow">
-                <p className="text-primary-foreground/90">{item.degree}</p>
-                <time className="text-xs text-primary-foreground/70">{item.period}</time>
-                <p className="text-lg font-bold mt-auto pt-4 text-amber-400">
-                  {item.score}
-                </p>
-              </CardContent>
-            </Card>
+        <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
+        <div className="relative border-l-2 border-primary/20 max-w-2xl mx-auto">
+          {educationData.map((item, index) => (
+            <div key={index} className="mb-10 ml-6">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -left-3 ring-8 ring-background"></span>
+              <h3 className="flex items-center mb-1 text-lg font-semibold text-foreground">
+                {item.institution}
+              </h3>
+              <time className="block mb-2 text-sm font-normal leading-none text-muted-foreground">
+                {item.period}
+              </time>
+              <p className="mb-1 text-base font-normal text-muted-foreground">{item.degree}</p>
+              <p className="text-base font-semibold text-primary">{item.score}</p>
+            </div>
           ))}
         </div>
       </div>
