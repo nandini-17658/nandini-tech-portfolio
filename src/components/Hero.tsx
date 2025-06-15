@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { PlayCircle } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -19,12 +19,12 @@ const Hero = () => {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <Button asChild size="lg" className="bg-amber-400 hover:bg-amber-500 text-amber-950 font-semibold text-base">
-                <a href="#about">Get Started</a>
+                <a href="#about">About Me</a>
               </Button>
               <Button asChild variant="ghost" size="lg" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground group text-base">
                 <a href="#contact">
-                  <PlayCircle className="mr-2 h-5 w-5" />
-                  Watch Intro
+                  <Mail className="mr-2 h-5 w-5" />
+                  Contact Me
                 </a>
               </Button>
             </div>
