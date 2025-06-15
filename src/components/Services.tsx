@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, Database, PenTool } from 'lucide-react';
 
@@ -21,20 +22,32 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services" className="bg-secondary">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Services</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Expertise Service! Let's check it out</h2>
+          <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
+            I offer a range of services to bring your ideas to life.
+          </p>
+        </div>
         <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <Card key={service.title}>
+          {services.map((service, index) => (
+            <Card 
+              key={service.title} 
+              className={`text-center p-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-2 
+              ${index === 1 ? 'bg-primary text-primary-foreground' : 'bg-background'}`}
+            >
               <CardHeader>
-                <div className="mx-auto bg-background rounded-full p-3 w-fit ring-2 ring-primary/10">
+                <div className={`mx-auto rounded-full p-3 w-fit mb-4 
+                ${index === 1 ? 'bg-primary-foreground/20 text-primary-foreground' : 'bg-primary/10 text-primary'}`}>
                   {service.icon}
                 </div>
-                <CardTitle className="text-center">{service.title}</CardTitle>
+                <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-center">{service.description}</p>
+                <p className={index === 1 ? 'text-primary-foreground/80' : 'text-muted-foreground'}>
+                  {service.description}
+                </p>
               </CardContent>
             </Card>
           ))}

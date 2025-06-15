@@ -31,7 +31,7 @@ const coursesData = [
 
 const Courses = () => {
   return (
-    <section id="courses" className="py-12 lg:py-24 bg-secondary">
+    <section id="courses" className="py-12 lg:py-24 bg-background">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Courses</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

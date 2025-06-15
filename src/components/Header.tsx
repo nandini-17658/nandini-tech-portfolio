@@ -6,9 +6,9 @@ import { Menu } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 
 const navLinks = [
+  { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#skills', label: 'Skills' },
+  { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -29,12 +29,16 @@ const Header = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <a href="#" className="text-xl font-bold text-primary">Nandini</a>
         
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">{link.label}</a>
             ))}
           </nav>
+
+          <Button asChild size="sm" className="hidden md:flex bg-amber-400 hover:bg-amber-500 text-amber-950 font-semibold">
+            <a href="/Nandini-Resume.pdf" download>Download CV</a>
+          </Button>
 
           <ThemeToggle />
 
@@ -50,6 +54,9 @@ const Header = () => {
                   {navLinks.map((link) => (
                     <a key={link.href} href={link.href} className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary">{link.label}</a>
                   ))}
+                  <Button asChild size="lg" className="bg-amber-400 hover:bg-amber-500 text-amber-950 font-semibold">
+                    <a href="/Nandini-Resume.pdf" download>Download CV</a>
+                  </Button>
                 </nav>
               </SheetContent>
             </Sheet>
