@@ -11,12 +11,15 @@ const skillsData = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-background">
+    <section id="skills" className="bg-secondary">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
+        <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">Skills</p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Technical Proficiency</h2>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {Object.entries(skillsData).map(([category, skills]) => (
-            <Card key={category} className="text-center">
+            <Card key={category} className="text-center bg-background">
               <CardHeader>
                 <CardTitle>{category}</CardTitle>
               </CardHeader>

@@ -25,6 +25,7 @@ const Services = () => {
     <section id="services" className="bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
+          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">Services</p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Expertise Service! Let's check it out</h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
             I offer a range of services to bring your ideas to life.

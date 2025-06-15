@@ -17,12 +17,15 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section id="experience">
+    <section id="experience" className="bg-background">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Experience</h2>
+        <div className="text-center mb-16">
+          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">Experience</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Work Experience</h2>
+        </div>
         <div className="max-w-2xl mx-auto flex flex-col gap-8">
           {experienceData.map((exp, index) => (
-            <Card key={index} className="transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+            <Card key={index} className="transition-all duration-300 hover:shadow-lg hover:-translate-y-2 bg-secondary/50 border border-secondary">
               <CardHeader>
                 <div className="flex items-start gap-4">
                   <div className="bg-background rounded-full p-2 ring-1 ring-primary/10">

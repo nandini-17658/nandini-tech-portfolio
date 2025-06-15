@@ -36,17 +36,18 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-background">
+    <section id="projects" className="bg-secondary">
       <div className="container mx-auto">
         <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">Portfolio</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Featured Projects</h2>
-            <p className="mt-3 text-lg text-indigo-200 max-w-2xl mx-auto">
+            <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
               Here are some of the projects I've worked on.
             </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Card key={project.title} className="flex flex-col bg-secondary/50 border-secondary hover:border-amber-400 transition-all duration-300 group rounded-xl overflow-hidden">
+            <Card key={project.title} className="flex flex-col bg-background border hover:border-amber-400 transition-all duration-300 group rounded-xl overflow-hidden">
               <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300" />

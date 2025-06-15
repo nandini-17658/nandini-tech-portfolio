@@ -6,7 +6,8 @@ const About = () => {
     <section id="about" className="bg-secondary">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>
+          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">About Me</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Designing Solutions, Not Just Visuals</h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-3xl mx-auto">
             I’m currently pursuing a B.Tech in Computer Science at Mohan Babu University. I’m passionate about building impactful tech solutions and constantly upgrading my skills through real-world projects and courses. My focus areas include full-stack development, Java, and collaborative problem-solving.
           </p>
