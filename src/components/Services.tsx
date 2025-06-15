@@ -4,17 +4,17 @@ import { Code2, Database, PenTool } from 'lucide-react';
 
 const services = [
   {
-    icon: <Code2 className="w-8 h-8 text-primary" />,
+    icon: <Code2 className="w-8 h-8" />,
     title: 'Web Development',
     description: 'Responsive full-stack websites from front-end to back-end for personal or educational platforms.',
   },
   {
-    icon: <PenTool className="w-8 h-8 text-primary" />,
+    icon: <PenTool className="w-8 h-8" />,
     title: 'UI with React.js',
     description: 'Modern and interactive user interfaces built with the React.js library for a seamless user experience.',
   },
   {
-    icon: <Database className="w-8 h-8 text-primary" />,
+    icon: <Database className="w-8 h-8" />,
     title: 'Database Integration',
     description: 'Database design and integration with MongoDB to handle data efficiently and securely.',
   },
@@ -32,21 +32,19 @@ const Services = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <Card 
               key={service.title} 
-              className={`text-center p-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-2 
-              ${index === 1 ? 'bg-primary text-primary-foreground' : 'bg-background'}`}
+              className="text-center flex flex-col rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-2 bg-primary text-primary-foreground"
             >
               <CardHeader>
-                <div className={`mx-auto rounded-full p-3 w-fit mb-4 
-                ${index === 1 ? 'bg-primary-foreground/20 text-primary-foreground' : 'bg-primary/10 text-primary'}`}>
+                <div className="mx-auto rounded-full p-4 w-fit mb-4 bg-white/10">
                   {service.icon}
                 </div>
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className={index === 1 ? 'text-primary-foreground/80' : 'text-muted-foreground'}>
+              <CardContent className="flex flex-col flex-grow">
+                <p className="text-primary-foreground/80">
                   {service.description}
                 </p>
               </CardContent>
