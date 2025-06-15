@@ -6,9 +6,9 @@ import { Github, Link } from 'lucide-react';
 
 const projects = [
   {
-    title: "Indian Constitution Awareness Website",
-    description: "An educational platform to inform youth about the Indian Constitution and democracy.",
-    stack: ["React.js", "HTML/CSS", "JavaScript", "Figma", "Canva"],
+    title: "Indian Constitution Website",
+    description: "To educate citizens, especially youth, about the Indian Constitution, democratic.",
+    stack: ["HTML", "CSS", "JavaScript", "React.js", "Canva", "Figma"],
     role: "Full-stack developer",
     image: "/lovable-uploads/16103533-e46e-4c96-a4fc-5864fbb9a7b0.png",
     link: "#",

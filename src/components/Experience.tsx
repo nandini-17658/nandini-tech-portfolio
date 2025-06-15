@@ -1,14 +1,16 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building } from 'lucide-react';
 
 const experienceData = [
   {
-    title: 'Web Developer Intern',
+    title: 'Web Developer',
     company: 'Devtown',
     duration: 'Jul 2024 to Oct 2024',
     tasks: [
-      'Created a full-stack responsive website using HTML, CSS, JavaScript, and PHP.',
-      'Participated in full SDLC: planning → design → development → deployment.',
+      'Built a responsive full-stack website using HTML, CSS, JavaScript, and PHP.',
+      'Involved in all stages of development – planning, designing, coding, and deployment.',
+      'Gained practical experience in real-world web development workflows.',
     ],
   },
 ];
