@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building } from 'lucide-react';
 
@@ -11,16 +10,6 @@ const experienceData = [
       'Built a responsive full-stack website using HTML, CSS, JavaScript, and PHP.',
       'Involved in all stages of development – planning, designing, coding, and deployment.',
       'Gained practical experience in real-world web development workflows.',
-    ],
-  },
-  {
-    title: 'Software Engineer Intern',
-    company: 'Tech Innovators',
-    duration: 'May 2024 - Jul 2024',
-    tasks: [
-      'Worked on the front-end of a web application using React and TypeScript.',
-      'Collaborated with senior developers to implement new features.',
-      'Participated in code reviews and agile team meetings.',
     ],
   },
 ];
