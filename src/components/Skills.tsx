@@ -1,7 +1,6 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Blocks, CodeXml, Database, ServerCog } from 'lucide-react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const skillsData = [
   {
@@ -37,31 +36,29 @@ const Skills = () => {
               A look at the languages, frameworks, and tools I use to build modern web applications.
             </p>
         </div>
-        <Tabs defaultValue={skillsData[0].category} className="max-w-3xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-8">
-            {skillsData.map((item) => (
-              <TabsTrigger key={item.category} value={item.category} className="flex items-center gap-2">
-                <item.icon className="w-5 h-5 text-primary" />
-                <span>{item.category}</span>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-          {skillsData.map((item) => (
-            <TabsContent
-              key={item.category}
-              value={item.category}
-              className="p-8 bg-background rounded-lg border min-h-[200px] flex items-center justify-center data-[state=active]:animate-fade-in-up"
+        <div className="max-w-4xl mx-auto">
+          {skillsData.map((category, index) => (
+            <div 
+              key={category.category} 
+              className="mb-12 animate-fade-in-up"
+              style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'backwards' }}
             >
-              <div className="flex flex-wrap justify-center gap-3">
-                {item.skills.map((skill) => (
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-background rounded-full p-3 ring-2 ring-primary/10">
+                  <category.icon className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-semibold tracking-tight">{category.category}</h3>
+              </div>
+              <div className="ml-4 pl-12 border-l-2 border-border flex flex-wrap gap-3 py-4">
+                {category.skills.map((skill) => (
                   <Badge key={skill} variant="secondary" className="text-base px-4 py-2 hover:bg-primary/10 transition-colors cursor-default">
                     {skill}
                   </Badge>
                 ))}
               </div>
-            </TabsContent>
+            </div>
           ))}
-        </Tabs>
+        </div>
       </div>
     </section>
   );
