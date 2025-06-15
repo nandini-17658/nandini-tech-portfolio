@@ -1,6 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Mail } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   return (
@@ -35,11 +36,14 @@ const Hero = () => {
                 <path d="M48.2,-64.8C62.1,-55.9,72.9,-41,77.7,-24.7C82.5,-8.4,81.3,9.4,75.1,25.6C68.9,41.7,57.7,56.2,43.7,66.1C29.8,75.9,13,81.1,-3.2,82.4C-19.4,83.7,-38.8,81.1,-52.7,71.1C-66.6,61.1,-75,43.7,-78.9,26.2C-82.7,8.7,-82.1,-8.9,-75.8,-23.7C-69.5,-38.4,-57.6,-50.2,-44,-59.1C-30.5,-67.9,-15.2,-73.8,0.7,-74.6C16.6,-75.4,33.2,-71.7,48.2,-64.8Z" transform="translate(100 100) scale(1.1)" />
               </svg>
             </div>
-             <img
-              alt="Gollapudi Venkata Nandini"
-              className="rounded-full object-cover aspect-square w-[280px] h-[280px] md:w-[380px] md:h-[380px]"
-              src="https://i.postimg.cc/Xq53GB8h/img-link.jpg"
-            />
+            <Avatar className="w-[280px] h-[280px] md:w-[380px] md:h-[380px]">
+              <AvatarImage
+                alt="Gollapudi Venkata Nandini"
+                src="https://i.postimg.cc/Xq53GB8h/img-link.jpg"
+                className="object-cover"
+              />
+              <AvatarFallback>GVN</AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
