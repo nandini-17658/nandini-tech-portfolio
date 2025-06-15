@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { GraduationCap } from 'lucide-react';
 
@@ -23,7 +24,7 @@ const coursesData = [
   {
     name: 'MongoDB Java Developer Path',
     date: 'Jun 2025',
-    organization: 'Devtown',
+    organization: 'MongoDB',
     description: 'Built Java applications using MongoDB, focusing on schema design and efficient data handling.'
   }
 ];

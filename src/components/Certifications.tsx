@@ -19,7 +19,7 @@ const certifications = [
   },
   {
     name: 'MongoDB Java Developer Path',
-    issuer: 'Devtown',
+    issuer: 'MongoDB',
     date: 'Jun 2025',
     description:
       'Built Java applications using MongoDB, focusing on schema design and efficient data handling.',
