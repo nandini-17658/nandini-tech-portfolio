@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building } from 'lucide-react';
 
@@ -10,16 +9,6 @@ const experienceData = [
     tasks: [
       'Created a full-stack responsive website using HTML, CSS, JavaScript, and PHP.',
       'Participated in full SDLC: planning → design → development → deployment.',
-    ],
-  },
-  {
-    title: 'Software Engineer Intern',
-    company: 'Tech Innovators',
-    duration: 'Jan 2024 to Jun 2024',
-    tasks: [
-      'Developed and maintained backend services using Java & Spring Boot.',
-      'Collaborated on designing and implementing new features for a large-scale application.',
-      'Wrote unit and integration tests to ensure code quality and reliability.'
     ],
   },
 ];
