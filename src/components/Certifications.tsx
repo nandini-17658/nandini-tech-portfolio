@@ -15,7 +15,7 @@ const certifications = [
     issuer: 'Devtown',
     date: 'Aug 2024',
     description:
-      'Successfully finished Devtown's Full Stack Web Development course, gaining practical experience in building full web applications.',
+      'Successfully finished Devtown\'s Full Stack Web Development course, gaining practical experience in building full web applications.',
   },
   {
     name: 'MongoDB Java Developer Path',
