@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Award } from 'lucide-react';
 
@@ -14,7 +15,7 @@ const certifications = [
     issuer: 'Devtown',
     date: 'Aug 2024',
     description:
-      'Successfully finished Devtown’s Full Stack Web Development course, gaining practical experience in building full web applications.',
+      'Successfully finished Devtown's Full Stack Web Development course, gaining practical experience in building full web applications.',
   },
   {
     name: 'MongoDB Java Developer Path',
@@ -22,6 +23,13 @@ const certifications = [
     date: 'Jun 2025',
     description:
       'Built Java applications using MongoDB, focusing on schema design and efficient data handling.',
+  },
+  {
+    name: 'Multicloud Network Associate (ACE)',
+    issuer: 'Aviatrix',
+    date: 'Jun 2025',
+    description:
+      'Earned the ACE Associate certification demonstrating knowledge in building and managing cloud networks across AWS, Azure, Google Cloud, and Oracle Cloud.',
   },
 ];
 
@@ -33,7 +41,7 @@ const Certifications = () => {
           <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">Achievements</p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Certifications</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {certifications.map((cert) => (
             <Card
               key={cert.name}
